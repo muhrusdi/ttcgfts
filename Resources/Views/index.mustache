@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ttcgfts</title>
+        
+        <link rel="stylesheet" href="styles/app.css">
+    </head>
+    <body>
+        <div class="wrapper">
+			<h1>things that can go fuck themselves</h1>
+			
+			<div id="posts">
+				{{#posts}}
+				<div class="post">
+					<span class="date">{{date}}</span>
+					<span class="text">{{text}}</span>
+				</div>
+				{{/posts}}
+			</div>
+			
+			<div class="divider"></div>
+			
+			<form id="post-form" action="/new-post" method="post"> <!-- Need to keep lowercase -->
+				<input type="text" name="text" class="text" placeholder="Something that can go fuck itself" />
+				<button type="submit" class="submit">Post</button>
+			</form>
+			
+			<div id="footer">
+				<p>Made by <a href="http://nathanflurry.com">this guy</a>. Powered by Swift with <a href="https://github.com/vapor/vapor">Vapor</a>.</p>
+			</div>
+        </div>
+    </body>
+</html>

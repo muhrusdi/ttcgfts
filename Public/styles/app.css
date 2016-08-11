@@ -1,0 +1,150 @@
+/* Core */
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: #F7F7F7;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	color: #333;
+	position: relative;
+}
+
+/* Generic */
+a {
+	color: #92A8D1;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+a:hover {
+	color: #F7CAC9;
+}
+
+h1 {
+	
+}
+
+/* Wrapper */
+div.wrapper {
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	margin: 10pt auto;
+	position: relative;
+}
+
+/* Divider */
+.divider {
+	width: 90%;
+	height: 1pt;
+	margin: 2pt auto;
+	background: #C0C0C0;
+}
+
+/* Post */
+#posts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 8pt 0;
+}
+
+.post {
+	display: inline-block;
+	position: relative;
+	background: #DBDBDB;
+	padding: 6pt;
+	padding-top: 12pt; /* For date */
+	margin: 2pt;
+	min-width: 30pt;
+	text-align: left;
+	border-radius: 5pt;
+}
+
+.post .text {
+	font-weight: 500;
+	font-size: 10pt;
+	word-wrap: break-word;
+}
+
+.post .date {
+	position: absolute;
+	top: 4.5pt;
+	font-weight: 400;
+	font-variant: small-caps;
+	font-size: 7pt;
+}
+
+/* Form */
+#post-form {
+	display: flex;
+	height: 25pt;
+	margin: 8pt 0;
+	padding: 0pt;
+}
+
+#post-form .text, #post-form .submit {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	margin: 0pt;
+}
+
+#post-form .text {
+	flex-grow: 6;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	padding: 6pt;
+	text-transform: lowercase;
+	border: none;
+	background: #DBDBDB;
+	
+	border-radius: 5pt 0 0 5pt;
+}
+
+#post-form .text::placeholder {
+	color: #929292;
+}
+
+#post-form .submit {
+	flex-grow: 1;
+	-webkit-appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #C0C0C0;
+	
+	border-radius: 0 5pt 5pt 0;
+}
+
+#post-form .submit:hover {
+	background: #C8C8C8;
+}
+
+#post-form .submit:active {
+	background: #A5A5A5
+}
+
+/* Footer */
+#footer {
+	width: 100%;
+	text-align: center;
+	padding: 10pt 0 20pt 0;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+	font-weight: 300;
+}
+
+#footer p a {
+	color: #ccc;
+}
