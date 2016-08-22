@@ -1,8 +1,8 @@
 {
-	"host": "us-cdbr-iron-east-04.cleardb.net",
-	"user": "ba9ef21d1687f0",
-	"password": "4062d68f",
-	"database": "heroku_0dd449bcb0ef7f8",
+	"host": "$DB_HOST",
+	"user": "$DB_USER",
+	"password": "$DB_PASS",
+	"database": "$DB_NAME",
 	"port": 3306,
 	"flag": 0
 }
