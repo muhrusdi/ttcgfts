@@ -5,8 +5,9 @@ import Fluent
 final class Post: Model {
 	static let dateFormatter: DateFormatter = {
 		let formatter = DateFormatter()
-		formatter.dateStyle = .short
-		formatter.timeStyle = .none
+		// TODO: Figure out why this is not working on Heroku
+		formatter.dateStyle = DateFormatter.Style(rawValue: 1)! // .short
+		formatter.timeStyle = DateFormatter.Style(rawValue: 0)! // .none
 		return formatter
 	}()
 	
